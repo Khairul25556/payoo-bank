@@ -55,8 +55,9 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
             //  transaction.appendChild(p);
           const div = document.createElement('div');
           div.classList.add('bg-black');
+          //${}--> aita diye amra dynamic valu gula likhte pari. 
           div.innerHTML = `
-            <h1 class="text-white">Added Money from ${selectedBank}</h1>
+            <h1 class="text-white">Added Money from ${selectedBank}</h1>  
             <h3 class="text-white">${amount}</h3>
             <p class="text-white">account number : ${accountNumber}</p>
           `
