@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="bg-gray-200 max-w-md min-h-screen mx-auto py-6">
+        <header>
+            <nav class="flex justify-center items-center mt-6">
+                <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+                    <img src="assets/bg.png" alt="" class=" w-48 absolute">
+                    <img src="assets/Group.png" alt="" class="w-16">
+                </div>
+            </nav>
+        </header>
+        <!-- login form -->
+        <div>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Account Number</span>
+                    </label>
+                    <input value="01301301302" id="account-number" type="number" placeholder="Type Account number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">PIN</span>
+                    </label>
+                    <input id="pin-number" type="text" placeholder="Enter your PIN" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="login-btn" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="script/login.js"></script>
+</body>
+</html>
