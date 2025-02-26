@@ -2,10 +2,8 @@ document.getElementById('cashout-btn').addEventListener('click',function(event){
         event.preventDefault();
         const accountNumber = document.getElementById('account-number').value;
         const pinNumber = getInputValueById('cashout-pin');
-        console.log(pinNumber);
         const mainBalance = getInputTextById('main-balance');
-        
-        const amount = getInputValueById('amount');
+        const amount = getInputValueById('cashout-amount');
         const selectedBank =document.getElementById('all-bank').value;
         if(amount > mainBalance){
           alert('Invalid Amount')

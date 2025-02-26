@@ -32,11 +32,10 @@
 //new way. 
 document.getElementById('add-money-btn').addEventListener('click', function(event){
     event.preventDefault();
-    const amount = getInputValueById('amount')
+    const amount = getInputValueById('addmoney-amount')
     const pinNumber = getInputValueById('addmoney-pin-number');
     const accountNumber = document.getElementById('account-number').value;
     const mainBalance = getInputTextById('main-balance');
-
     const selectedBank =document.getElementById('all-bank').value;
        if(amount <= 0){
         alert('Invalid Amount')
